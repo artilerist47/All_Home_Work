@@ -1,12 +1,12 @@
 from flask import Flask
-from utils import get_all_candidates, get_candidate_by_id, formate_candidates, get_candidates_by_skill
+from utils import get_candidate_by_id, formate_candidates, get_candidates_by_skill, load_candidates
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def page_main():
-    all_candidates = get_all_candidates()
+    all_candidates = load_candidates()
     result = formate_candidates(all_candidates)
     return result
 
