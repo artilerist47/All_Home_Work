@@ -33,7 +33,7 @@ def get_candidates_by_skill(skill):
     candidates = load_candidates()
     result = []
     for candidate in candidates:
-        if skill in candidate["skills"].lower():
+        if skill in candidate["skills"].lower().split(', '):
             result.append(candidate)
-            return result
-            # return candidate
+    return result
+
