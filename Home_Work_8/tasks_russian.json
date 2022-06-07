@@ -1,0 +1,27 @@
+[
+    {
+        "questions": "Сколько дней в неделе?",
+        "difficulty": "1",
+        "answer": "7"
+    },
+    {
+        "questions": "Сколько букв в английском алфавите?",
+        "difficulty": "3",
+        "answer": "26"
+    },
+    {
+        "questions": "Сколько сторон в треугольнике?",
+        "difficulty": "2",
+        "answer": "3"
+    },
+    {
+        "questions": "Сколько лет в одном тысячелетии?",
+        "difficulty": "2",
+        "answer": "1000"
+    },
+    {
+        "questions": "Сколько сторон у шестиугольника?",
+        "difficulty": "4",
+        "answer": "6"
+    }
+]
