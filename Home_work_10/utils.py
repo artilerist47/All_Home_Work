@@ -31,9 +31,9 @@ def get_candidate_by_id(uid):
 
 def get_candidates_by_skill(skill):
     candidates = load_candidates()
-    # result = []
+    result = []
     for candidate in candidates:
         if skill in candidate["skills"].lower():
-            # result.append(candidate)
-            # return result
-            return candidate
+            result.append(candidate)
+            return result
+            # return candidate
