@@ -7,21 +7,6 @@ def load_all_candidates():
         return all_candidates
 
 
-def formate_candidates(all_candidates):
-    result = "<pre>"
-
-    for candidate in all_candidates:
-        result += f"""
-            {candidate['name']}\n
-            {candidate['position']}\n
-            {candidate['skills']}\n
-            """
-
-    result += "</pre>"
-
-    return result
-
-
 def get_candidate_by_id(candidate_id):
     candidates = load_all_candidates()
     for candidate in candidates:
@@ -31,9 +16,11 @@ def get_candidate_by_id(candidate_id):
 
 def get_candidate_by_name(candidate_name):
     candidates = load_all_candidates()
+    result = []
     for candidate in candidates:
         if candidate_name in candidate["name"]:
-            return candidate
+            result.append(candidate)
+    return result
 
 
 def get_candidates_by_skill(candidate_skill):
